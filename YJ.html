@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Shree Yash Jewellers</title>
+<meta name="description" content="Shree Yash Jewellers - Hallmark Gold, Diamond, Silver Jewellery in Thane West. Trusted since 2007. Jewellery Repair, Polishing, Ring Resizing & Custom Designs.">
+<meta name="keywords" content="Shree Yash Jewellers, Thane Jewellery, Gold Jewellery, Diamond Jewellery, Silver Jewellery, Jewellery Repair, Kasarvadavali Jewellers, GB Road Jewellers, Thane West Jewellers">
+<style>
+  :root{
+    --purple:#5b21b6;
+    --purple-deep:#2a004a;
+    --gold:#ffd166;
+    --gold-deep:#b8860b;
+  }
+  *{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif}
+  a{text-decoration:none;color:inherit}
+
+  /* Header */
+  header{
+    position:fixed; top:0; left:0; right:0; z-index:1000;
+    background:linear-gradient(90deg,var(--purple-deep),var(--gold-deep));
+    padding:15px; text-align:center; box-shadow:0 6px 18px rgba(0,0,0,.25);
+  }
+  .brand{
+    font-size:1.8rem; font-weight:900; letter-spacing:1px;
+    background:linear-gradient(90deg,#fff,#ffe9a6,#ffd166,#fff);
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+  }
+  nav a{margin:0 15px;color:#fff;font-weight:700}
+  nav a:hover{color:var(--gold)}
+
+  /* Hero Slideshow */
+  #home{
+    margin-top:80px; min-height:100vh; position:relative; overflow:hidden;
+  }
+  .slides{position:absolute; inset:0; background-size:cover; background-position:center; animation:slideShow 15s infinite;}
+  @keyframes slideShow{
+    0%{background-image:url('https://i.ibb.co/whWchqL/jewellery-bg.jpg')}
+    50%{background-image:url('https://images.unsplash.com/photo-1612200178669-f7b7d4e6e9b3')}
+    100%{background-image:url('https://i.ibb.co/whWchqL/jewellery-bg.jpg')}
+  }
+  .overlay{
+    position:absolute; inset:0; background:linear-gradient(rgba(42,0,74,.7),rgba(91,33,182,.7));
+    display:flex; align-items:center; justify-content:center; text-align:center; color:#fff;
+  }
+  .overlay h1{font-size:3rem;font-weight:900;margin-bottom:1rem;color:var(--gold)}
+  .overlay p{font-size:1.2rem;margin-bottom:1.5rem}
+  .overlay a{background:var(--gold);color:#111;padding:12px 24px;border-radius:25px;font-weight:bold}
+  .overlay a:hover{background:#ffb703}
+
+  /* Sections */
+  section{padding:80px 20px;text-align:center}
+  h2{font-size:2rem;margin-bottom:10px;color:var(--purple-deep)}
+  p.sub{color:#555;margin-bottom:30px}
+
+  /* Services */
+  .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+  .service{background:#fdf4ff;padding:20px;border:2px solid var(--purple);border-radius:12px;transition:.3s}
+  .service:hover{box-shadow:0 6px 20px rgba(0,0,0,.2);transform:translateY(-5px)}
+
+  /* Trust Badges */
+  .badges{display:flex;justify-content:center;gap:20px;margin-top:20px;flex-wrap:wrap}
+  .badge{background:linear-gradient(90deg,var(--purple),var(--gold));color:#fff;padding:10px 20px;border-radius:20px;font-weight:bold}
+
+  /* Testimonials */
+  #reviewForm{max-width:500px;margin:0 auto 30px auto;display:grid;gap:15px;text-align:left}
+  #reviewForm input,#reviewForm textarea{padding:12px;border:1px solid #ccc;border-radius:8px;width:100%}
+  #reviewForm button{background:var(--purple);color:#fff;padding:12px;border:none;border-radius:8px;font-weight:bold;cursor:pointer}
+  #reviewForm button:hover{background:var(--gold);color:#111}
+  .reviews{margin-top:30px;display:grid;gap:15px}
+  .review{background:#fff8e7;border-left:6px solid var(--gold);padding:15px;border-radius:8px;text-align:left;box-shadow:0 6px 16px rgba(0,0,0,.15)}
+  .review strong{color:var(--purple)}
+
+  /* Blog */
+  .blog{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;text-align:left}
+  .post{background:#f8f7ff;padding:20px;border-radius:12px;box-shadow:0 6px 16px rgba(0,0,0,.15)}
+  .post h3{color:var(--purple)}
+
+  /* Contact */
+  form{max-width:600px;margin:0 auto;display:grid;gap:15px}
+  input,textarea{padding:12px;border:1px solid #ccc;border-radius:8px}
+  button{background:var(--purple);color:#fff;padding:12px;border:none;border-radius:8px;font-weight:bold}
+  button:hover{background:var(--gold);color:#111}
+
+  /* Footer */
+  footer{background:var(--purple-deep);color:#fff;text-align:center;padding:20px}
+
+  /* Floating WhatsApp */
+  .whatsapp{
+    position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;
+    padding:14px 18px;border-radius:50%;font-size:24px;box-shadow:0 6px 16px rgba(0,0,0,.25);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">Shree Yash Jewellers</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#blog">Jewellery Insights</a>
+    <a href="#contact">Contact</a>
+    <a href="#address">Address</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="home">
+  <div class="slides"></div>
+  <div class="overlay">
+    <div>
+      <h1>Elegance • Trust • Tradition</h1>
+      <p>Certified Gold & Diamond Jewellery • Trusted Since 2007</p>
+      <a href="#services">Explore Our Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <h2>Our Services</h2>
+  <p class="sub">Premium services for all your jewellery needs</p>
+  <div class="services">
+    <div class="service">Gold, Diamond & Silver Jewellery</div>
+    <div class="service">Custom Designs</div>
+    <div class="service">Jewellery Repair</div>
+    <div class="service">Polishing & Cleaning</div>
+    <div class="service">Ring Resizing</div>
+    <div class="service">Stone Setting</div>
+  </div>
+  <div class="badges">
+    <div class="badge">✓ Hallmark Certified</div>
+    <div class="badge">✓ Trusted Since 2007</div>
+    <div class="badge">✓ 100% Verified</div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <h2>What Our Customers Say</h2>
+  <form id="reviewForm">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <textarea id="message" rows="4" placeholder="Your Review" required></textarea>
+    <button type="submit">Submit Review</button>
+  </form>
+  <div class="reviews" id="reviewsList"></div>
+</section>
+
+<!-- BLOG -->
+<section id="blog">
+  <h2>Jewellery Insights</h2>
+  <div class="blog">
+    <div class="post">
+      <h3>How to Identify Real Gold?</h3>
+      <p>Always check for hallmark certification (BIS Hallmark in India). Pure gold is soft, so most jewellery is alloyed for strength. A magnet test helps too—real gold is non-magnetic. For higher assurance, jewelers use acid tests or electronic testers. At Shree Yash Jewellers, every piece is BIS hallmarked, ensuring you get genuine purity.</p>
+    </div>
+    <div class="post">
+      <h3>Latest Diamond Jewellery Trends 2025</h3>
+      <p>This year, lightweight diamond jewellery is trending for daily wear. Rose gold with diamonds is in high demand among youngsters. Custom engagement rings with unique settings are also popular. At our store, we showcase a mix of classic solitaires and modern designs that match both traditional and contemporary fashion.</p>
+    </div>
+    <div class="post">
+      <h3>How to Maintain Your Jewellery</h3>
+      <p>Clean your jewellery at home using mild soap and warm water, but avoid harsh chemicals. Store them in separate pouches to prevent scratches. For gold and diamond pieces, professional polishing every 6–12 months keeps them sparkling. At Shree Yash Jewellers, we offer free lifetime cleaning services for our customers.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>For any enquiry call on the given number. Shop is closed every Monday.</p>
+  <form onsubmit="alert('Message Sent! We will contact you soon.'); return false;">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <p style="margin-top:20px;font-size:1.2rem;font-weight:bold;">📞 Call Us: <a href="tel:+919818402617">9818402617</a></p>
+  <p>💬 <a href="https://wa.me/919818402617" target="_blank">Chat on WhatsApp</a></p>
+</section>
+
+<!-- ADDRESS -->
+<section id="address">
+  <h2>Our Address</h2>
+  <p>Shop Number 21, Yashraj Park, Kasarvadavali, G.B. Road, Thane West - 400615</p>
+  <iframe src="https://www.google.com/maps?q=Yashraj+Park+Kasarvadavali+Thane+West&output=embed" width="100%" height="300" style="border:0;border-radius:12px;"></iframe>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>&copy; 2025 Shree Yash Jewellers | All Rights Reserved</p>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/919818402617" class="whatsapp" target="_blank">💬</a>
+
+<script>
+  const form = document.getElementById("reviewForm");
+  const reviewsList = document.getElementById("reviewsList");
+
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    const name = document.getElementById("name").value;
+    const message = document.getElementById("message").value;
+
+    if(name && message){
+      const review = document.createElement("div");
+      review.classList.add("review");
+      review.innerHTML = `<strong>${name}</strong><p>${message}</p>`;
+      reviewsList.prepend(review);
+
+      form.reset();
+    }
+  });
+</script>
+
+</body>
+</html>
